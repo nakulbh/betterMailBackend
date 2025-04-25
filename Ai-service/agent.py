@@ -204,7 +204,7 @@ async def summarize_email_thread(access_token: str, thread_id: str) -> str:
         
         messages = [
             SystemMessage(content="You are an assistant that summarizes email threads concisely."),
-            HumanMessage(content=f"Summarize this email thread in a few sentences, highlighting key points and action items:\n\n{'\n---\n'.join(email_contents)}")
+            HumanMessage(content=f"Summarize this email thread in a few sentences, highlighting key points and action items:\n\n{('\n---\n').join(email_contents)}")
         ]
         
         summary = llm.invoke(messages).content

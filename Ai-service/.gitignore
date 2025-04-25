@@ -1,2 +1,3 @@
-Ai-service/venv
-Ai-service/__pycache__
+venv
+__pycache__
+.env
